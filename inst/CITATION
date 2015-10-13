@@ -1,0 +1,48 @@
+#cat("'RDS Analyst' is a suite of packages for the statistical modeling of network data.\n")
+#cat('Please read the license using license.statnet()\n')
+
+citHeader("If you are using 'RDS Analyst' for research that will be published, we request that you acknowledge this with the following citation:")
+
+# desc <- packageDescription("DeducerRDSAnalyst")
+
+# auts <- eval(parse(text=desc$`Authors@R`))
+# auts <- auts[sapply(auts, function(aut) "aut" %in% aut$role)]
+
+bibentry("Manual",
+         title = "RDS Analyst: Software for the Analysis of Respondent-Driven Sampling Data",
+         author = personList(as.person("Mark S. Handcock"),
+                             as.person("Ian E. Fellows"),
+                             as.person("Krista J. Gile")),
+         year         = "2014",
+         note         = "Version 0.42",
+         address      = "Los Angeles, CA",
+         url          = "http://hpmrg.org",
+         
+         textVersion = 
+         paste("Mark S. Handcock, Ian E. Fellows, Krista J. Gile (2014) ", 
+               "RDS Analyst: Software for the Analysis of Respondent-Driven Sampling Data",
+               ", Version 0.42,", " URL http://hpmrg.org.",
+               sep="")
+         )
+
+#bibentry("Manual",
+#         title = paste(desc$Package,": ", desc$Title, sep=""),
+#         author = personList(as.person("Mark S. Handcock"),
+#                             as.person("Ian E. Fellows"),
+#                             as.person("Krista J. Gile")),
+#         year         = substr(desc$Date,1,4),
+#         note         = paste("R package version ", desc$Version, sep=""),
+#         address      = "Los Angeles, CA",
+#         url          = "http://hpmrg.org",
+#         
+#         textVersion = 
+#         paste("Mark S. Handcock, Ian E. Fellows, Krista J. Gile (2012) ", 
+#               paste(desc$Package,": ", desc$Title, sep=""),
+#               ", Version ", desc$Version, ",", " URL http://hpmrg.org.",
+#               sep="")
+#         )
+##        url          = "http://CRAN.R-project.org/package=DeducerRDSAnalyst",
+
+citFooter("We have invested a lot of time and effort in creating",
+          "'RDS Analyst' for use by other researchers.",
+          "Please cite it in all papers where it is used.")

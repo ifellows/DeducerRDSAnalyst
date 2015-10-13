@@ -1,0 +1,7 @@
+#!/bin/sh
+
+
+javac -target 1.4 -source 1.4 -d . -classpath JGR.jar:deducer.jar RDSAnalyst/*.java
+jar fc RDSAnalyst.jar RDSAnalyst/*.class icons
+rm RDSAnalyst/*.class
+mv RDSAnalyst.jar ..
