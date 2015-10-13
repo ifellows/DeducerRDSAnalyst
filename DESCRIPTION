@@ -1,0 +1,47 @@
+Package: DeducerRDSAnalyst
+Version: 0.1
+Date: 2012-08-24
+Title: Graphical User Interface to the RDS package for Respondent-Driven
+    Sampling
+Author: Ian E. Fellows and Mark S. Handcock with contributions from Jane Carlen
+Maintainer: Mark S. Handcock <handcock@ucla.edu>, Ian E. Fellows
+    <ian@fellstat.com>
+Description: This is plug-in for the Deducer package that produces a GUI for
+    the RDS package.
+Depends:
+    R (>= 3.0.0),
+    Deducer (>= 0.7-0),
+    xtable,
+    RDS,
+    survey,
+    XLConnect
+Suggests:
+    size,
+Imports:
+    stringr,
+    Hmisc,
+    rJava,
+    JGR,
+    testthat
+SystemRequirements: Java (>= 1.4), JRI
+License: LGPL-2.1
+URL: http://hpmrg.org
+Collate:
+    'compute-weights.R'
+    'compute-wtd.degree.R'
+    'contingency-tables.R'
+    'descriptives.R'
+    'differential-activity.R'
+    'frequencies.R'
+    'homophily.R'
+    'load-data.R'
+    'meta-data.R'
+    'plot.R'
+    'plotrecruitment.R'
+    'save-data.R'
+    'testdiffproportions.R'
+    'testtrendproportions.R'
+    'util.R'
+    'zzz.R'
+    'postrior.R'
+    'prior.R'
